@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <item
+        android:title="Tìm kiếm"
+        android:id="@+id/search_option"
+        android:icon="@drawable/ic_menu_search"
+        app:showAsAction="ifRoom"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        />
+    <item
+        android:title="Sắp xếp"
+        android:id="@+id/sort_option"
+        app:showAsAction="never">
+        <menu>
+            <item
+                android:title="Tên"
+                android:id="@+id/by_name"
+                app:showAsAction="never"/>
+            <item
+                android:title="Ngày"
+                android:id="@+id/by_date"
+                app:showAsAction="never"/>
+            <item
+                android:title="Kích thước"
+                android:id="@+id/by_size"
+                app:showAsAction="never"/>
+        </menu>
+    </item>
+
+
+
+</menu>
